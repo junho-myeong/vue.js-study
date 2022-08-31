@@ -60,3 +60,6 @@
 
 ## 선언적 렌더링과 입력 핸들링(vue3-test1)
 - npx degit ParkYoungWoong/vue3-webpack-template#eslint vue3-test1
+- npm i 
+- npm i vue@next
+- SFC(sing file component)
