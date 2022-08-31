@@ -45,8 +45,18 @@
 - npx degit junho/webpack-template vue3-webpack-template
 - npm i vue@next(vue 패키지를 통해서 vue.js코드를 읽어 들일수만 잇고, 따로 vue라는 확장자를 사용할수잇는 패키지를 설치해 줘야한다.)
 - npm i -D vue-loader@next vue-style-loader @vue/compiler-sfc
+- entry 포인트 바꿔주기
 - webpack.config.js에서 module부분에 vue를 해석할수 잇도록 rules 에 vue확장자를 필터링 해서 vue loader가 실행가능하게 하고
 - style부분이 해석 될수 잇도록 scss, css 해석 하게 하는것
 - plugin에서 생성자 함수로 끼워 주는것
+- import할때 확장자를 따로 작성하지 않아도 되게 해주는것 - webpack.config.js에서 exports 부분에 resolve라는 속성 추가하기
 - npm i -D file-loader(파일을 읽어서 브라우저에 출력해주는 패키지)
 - alias를 통해서 별칭으로 파일의 경로를 따져 주고, 그걸로 인해 assets라는 폴더에 접근하기
+
+## vue3 Webpack Template-ESLint 구성(vue3-webpack-template)
+- eslint란 우리가 vue 코드를 작성할때 사용할 규칙들을 규정하는것이다.
+- npm i -D eslint eslint-plugin-vue babel-eslint
+- .eslintrc.js 에서 작성된 규칙을 토대로 vue를 작성 할수 잇다.
+
+## 선언적 렌더링과 입력 핸들링(vue3-test1)
+- npx degit ParkYoungWoong/vue3-webpack-template#eslint vue3-test1
