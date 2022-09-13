@@ -43,8 +43,9 @@
 ## Vue3 Webpack Template
 - 우리가 기존에 만들었던 webpack template를 통해서 vue 프로젝트로 만들기
 - npx degit junho/webpack-template vue3-webpack-template
+- src폴더 만들기
 - npm i vue@next(vue 패키지를 통해서 vue.js코드를 읽어 들일수만 잇고, 따로 vue라는 확장자를 사용할수잇는 패키지를 설치해 줘야한다.)
-- npm i -D vue-loader@next vue-style-loader @vue/compiler-sfc
+- npm i -D vue-loader@next vue-style-loader @vue/compiler-sfc (vue라는 확장자를 가지는 파일을 사용하룻 잇게 해주는 패키지를 설치하는것이다.)
 - entry 포인트 바꿔주기
 - webpack.config.js에서 module부분에 vue를 해석할수 잇도록 rules 에 vue확장자를 필터링 해서 vue loader가 실행가능하게 하고
 - style부분이 해석 될수 잇도록 scss, css 해석 하게 하는것
@@ -52,6 +53,10 @@
 - import할때 확장자를 따로 작성하지 않아도 되게 해주는것 - webpack.config.js에서 exports 부분에 resolve라는 속성 추가하기
 - npm i -D file-loader(파일을 읽어서 브라우저에 출력해주는 패키지)
 - alias를 통해서 별칭으로 파일의 경로를 따져 주고, 그걸로 인해 assets라는 폴더에 접근하기
+- alias: {
+      '~': path.resolve(__dirname, 'src'),
+      'assets' : path.resolve(__dirname, 'src/assets')
+    }
 
 ## vue3 Webpack Template-ESLint 구성(vue3-webpack-template)
 - eslint란 우리가 vue 코드를 작성할때 사용할 규칙들을 규정하는것이다.
