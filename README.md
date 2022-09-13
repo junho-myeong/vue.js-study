@@ -22,12 +22,12 @@
   ```
   ``` js
   Vue.createApp({
-  data() {
-    return {
-      message: 'Hello Vue!',
-      test: 'test!!'
+    data() {
+      return {
+        message: 'hello Vue',
+        test: 'test!!!'
+      }
     }
-  }
   }).mount('#app')
   ```
 
