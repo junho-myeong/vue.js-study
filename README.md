@@ -62,6 +62,11 @@
 - eslint란 우리가 vue 코드를 작성할때 사용할 규칙들을 규정하는것이다.
 - npm i -D eslint eslint-plugin-vue babel-eslint
 - .eslintrc.js 에서 작성된 규칙을 토대로 vue를 작성 할수 잇다.
+- vue3 eslint rules
+- settings => 기본설정열기 json에서 "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+- 에디터에서 파일 저장하면 eslint에 맞게 자동으로 수정해 주겠다 라는 뜻이다.
 
 ## 선언적 렌더링과 입력 핸들링(vue3-test1)
 - npx degit ParkYoungWoong/vue3-webpack-template#eslint vue3-test1
